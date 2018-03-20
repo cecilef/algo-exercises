@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { KnapsackProblemComponent } from './knapsack-problem/knapsack-problem.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KnapsackProblemComponent
   ],
   imports: [
     BrowserModule
