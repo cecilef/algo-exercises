@@ -40,4 +40,24 @@ describe('KnapsackProblemComponent', () => {
     expect(result).toEqual(0);
     done();
   });
+
+  it ('should return 20', (done) => {
+    const result = component.fillKnapSack(
+      [10, 20, 30, 40, 50, 60, 70],
+      [10, 20, 30, 40, 50, 60, 70],
+      20
+  );
+    expect(result).toEqual(20);
+    done();
+  });
+
+  it('should return 180', (done) => {
+    const result = component.fillKnapSack(
+      [100, 160, 180, 40, 10, 6, 70],
+      [1, 2, 30, 20, 50, 60, 70],
+      20
+    );
+    expect(result).toEqual(180);
+    done();
+  });
 });
